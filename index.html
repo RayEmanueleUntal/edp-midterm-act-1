@@ -5,16 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EDP Midterm Activity 1</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
+    <header>
+      <img src="assets/whitelogo.png" alt="addu logo" />
+      <div class="header-labels">
+        <h2>Ateneo de Davao University</h2>
+        <h3>Law School Application Form</h3>
+      </div>
+    </header>
     <main>
-      <form action="">
-        <h2>Personal Information</h2>
+      <form action="" id="personal-information-form" class="form">
+        <div class="form-header">
+          <i class="fa-solid fa-user"></i>
+          <h2>Personal Information</h2>
+        </div>
 
         <div class="input-container">
           <div class="input-field">
-            <label for="">Student Type</label>
-            <select name="student-type" id="student-type-select">
+            <label for="studentType"
+              >Student Type <span style="color: red">*</span></label
+            >
+            <select name="studentType" id="studentType-select">
               <option value="" disabled selected hidden>
                 --Select Student Type--
               </option>
@@ -24,10 +40,12 @@
           </div>
 
           <div class="input-field">
-            <label for="religion-select">Religion</label>
+            <label for="religion-select"
+              >Religion <span style="color: red">*</span></label
+            >
             <select name="religion" id="religion-select">
               <option value="" disabled selected hidden>
-                --Select Religion
+                --Select Religion--
               </option>
               <option value="Roman Catholic">Roman Catholic</option>
               <option value="Christianity">Christianity</option>
@@ -42,8 +60,10 @@
           </div>
 
           <div class="input-field">
-            <label for="civil-status-select">Civil Status</label>
-            <select name="civil-status" id="civil-status-select">
+            <label for="civilStatus-select"
+              >Civil Status <span style="color: red">*</span></label
+            >
+            <select name="civilStatus" id="civilStatus-select">
               <option value="" disabled selected hidden>
                 --Select Civil Status--
               </option>
@@ -57,8 +77,10 @@
           </div>
 
           <div class="input-field">
-            <label for="first-name-input">First Name</label>
-            <input type="text" name="first-name" id="first-name-input" />
+            <label for="firstName-input"
+              >First Name <span style="color: red">*</span></label
+            >
+            <input type="text" name="firstName" id="firstName-input" />
           </div>
 
           <div class="input-field">
@@ -72,8 +94,10 @@
           </div>
 
           <div class="input-field">
-            <label for="last-name-input">Last Name</label>
-            <input type="text" name="last-name" id="last-name-input" />
+            <label for="lastName-input"
+              >Last Name <span style="color: red">*</span></label
+            >
+            <input type="text" name="lastName" id="lastName-input" />
           </div>
 
           <div class="input-field">
@@ -82,7 +106,9 @@
           </div>
 
           <div class="input-field">
-            <label for="contact-input">Contact Number</label>
+            <label for="contact-input"
+              >Contact Number <span style="color: red">*</span></label
+            >
             <input
               type="number"
               name="contact"
@@ -92,12 +118,21 @@
           </div>
 
           <div class="input-field">
-            <label for="birthdate-input">Birthdate</label>
-            <input type="date" placeholder="MM-DD-YYYY" />
+            <label for="birthdate-input"
+              >Birthdate <span style="color: red">*</span></label
+            >
+            <input
+              type="date"
+              name="birthdate"
+              id="birthdate-input"
+              placeholder="MM-DD-YYYY"
+            />
           </div>
 
           <div class="input-field">
-            <label for="sex-select">Sex</label>
+            <label for="sex-select"
+              >Sex <span style="color: red">*</span></label
+            >
             <select name="sex" id="sex-select">
               <option value="" disabled selected hidden>--Select Sex--</option>
               <option value="male">Male</option>
@@ -106,12 +141,16 @@
           </div>
 
           <div class="input-field">
-            <label for="email-input">Email Address</label>
+            <label for="email-input"
+              >Email Address <span style="color: red">*</span></label
+            >
             <input type="email" name="email" id="email-input" />
           </div>
 
           <div class="input-field">
-            <label for="nationality-input">Nationality</label>
+            <label for="nationality-input"
+              >Nationality <span style="color: red">*</span></label
+            >
             <input
               type="text"
               name="nationality"

@@ -1,3 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  background-color: #f3f4f6;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #172554;
+  padding: 30px;
+  color: white;
+  font-family: "Cinzel", serif;
+}
+
+.header-labels {
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+.header-labels h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+header img {
+  height: 60px;
+  width: auto;
+}
+
+main {
+  margin-top: 50px;
+}
+
+.form {
+  margin: 20px;
+  padding: 30px;
+  border: 1px solid rgba(128, 128, 128, 0.204);
+  background-color: white;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #172554;
+}
+
+.form-header h2 {
+  font-weight: 600;
+}
+
 .input-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
