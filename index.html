@@ -3,7 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>EDP Midterm Activity 1</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <form action="">
+        <h2>Personal Information</h2>
+
+        <div class="input-container">
+          <div class="input-field">
+            <label for="">Student Type</label>
+            <select name="student-type" id="student-type-select">
+              <option value="" disabled selected hidden>
+                --Select Student Type--
+              </option>
+              <option value="new student">New Student</option>
+              <option value="transferee">Transferee</option>
+            </select>
+          </div>
+
+          <div class="input-field">
+            <label for="religion-select">Religion</label>
+            <select name="religion" id="religion-select">
+              <option value="" disabled selected hidden>
+                --Select Religion
+              </option>
+              <option value="Roman Catholic">Roman Catholic</option>
+              <option value="Christianity">Christianity</option>
+              <option value="Islam">Islam</option>
+              <option value="Hinduism">Hinduism</option>
+              <option value="Buddhism">Buddhism</option>
+              <option value="Judaism">Judaism</option>
+              <option value="Atheism">Atheism</option>
+              <option value="Agnosticism">Agnosticism</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="input-field">
+            <label for="civil-status-select">Civil Status</label>
+            <select name="civil-status" id="civil-status-select">
+              <option value="" disabled selected hidden>
+                --Select Civil Status--
+              </option>
+              <option value="single">Single</option>
+              <option value="married">Married</option>
+              <option value="widowed">Widowed</option>
+              <option value="separated">Separated</option>
+              <option value="annulled">Annulled</option>
+              <option value="divorced">Divorced</option>
+            </select>
+          </div>
+
+          <div class="input-field">
+            <label for="first-name-input">First Name</label>
+            <input type="text" name="first-name" id="first-name-input" />
+          </div>
+
+          <div class="input-field">
+            <label for="middlename-input">Middlename</label>
+            <input
+              type="text"
+              name="middlename"
+              id="middlename-input"
+              placeholder="Leave if blank"
+            />
+          </div>
+
+          <div class="input-field">
+            <label for="last-name-input">Last Name</label>
+            <input type="text" name="last-name" id="last-name-input" />
+          </div>
+
+          <div class="input-field">
+            <label for="suffix-input">Suffix</label>
+            <input type="text" name="suffix" id="suffix-input" />
+          </div>
+
+          <div class="input-field">
+            <label for="contact-input">Contact Number</label>
+            <input
+              type="number"
+              name="contact"
+              id="contact-input"
+              placeholder="e.g. 09273992923"
+            />
+          </div>
+
+          <div class="input-field">
+            <label for="birthdate-input">Birthdate</label>
+            <input type="date" placeholder="MM-DD-YYYY" />
+          </div>
+
+          <div class="input-field">
+            <label for="sex-select">Sex</label>
+            <select name="sex" id="sex-select">
+              <option value="" disabled selected hidden>--Select Sex--</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+
+          <div class="input-field">
+            <label for="email-input">Email Address</label>
+            <input type="email" name="email" id="email-input" />
+          </div>
+
+          <div class="input-field">
+            <label for="nationality-input">Nationality</label>
+            <input
+              type="text"
+              name="nationality"
+              id="nationality-input"
+              placeholder="Type to search countries"
+            />
+          </div>
+        </div>
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
