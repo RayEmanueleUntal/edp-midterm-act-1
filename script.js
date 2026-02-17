@@ -4,10 +4,10 @@ const state = {
     religion: "",
     civilStatus: "",
     firstName: "",
-    middleName: "",
+    middlename: "",
     lastName: "",
     suffix: "",
-    contact: 0,
+    contact: "",
     birthdate: "",
     sex: "",
     email: "",
@@ -62,5 +62,6 @@ form.addEventListener("submit", (event) => {
   }
 
   localStorage.setItem("userFormSubmission", JSON.stringify(state.formData));
+  console.log(state.formData);
   alert("Data saved successfully!");
 });

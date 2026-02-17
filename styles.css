@@ -1,6 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
 
+/* For Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Standard property for modern browsers */
+input[type="number"] {
+  appearance: textfield;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -53,6 +70,11 @@ main {
   align-items: center;
   gap: 20px;
   color: #172554;
+  margin-bottom: 40px;
+}
+
+.form-header .my-icon {
+  font-size: 20px;
 }
 
 .form-header h2 {
@@ -68,4 +90,34 @@ main {
 .input-field {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+.input-field input,
+.input-field select {
+  border: 1px solid rgba(128, 128, 128, 0.204);
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  background-color: #0d6efd;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .input-container {
+    grid-template-columns: 1fr;
+  }
+
+  .header-labels h2 {
+    font-size: 20px;
+  }
 }
